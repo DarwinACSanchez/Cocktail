@@ -1,14 +1,13 @@
 import { createApp } from 'vue'
-import './style.css'
 import App from './App.vue'
+import './assets/style.css'
+
 //*Importar el router
 import { createWebHistory, createRouter } from 'vue-router'
 import Home from './components/Pages/Home.vue'
 import Cocktail_List from './components/Pages/Cocktail_List.vue'
-import Cocktail_Ingredients from './components/Pages/Cocktail_Ingredients.vue'
+import Ingredients from './components/Pages/Ingredients.vue'
 
-import CategoryDetails from './components/CategoryDetails.vue'
-import MealDetails from './components/MealDetails.vue'
 
 // import "../css/app.css"
 // import '@fortawesome/fontawesome-free/css/all.min.css'
@@ -42,10 +41,9 @@ const routes = [
         component: Cocktail_List
     },
     {
-        path: '/cocktail_ingredients/:id',
-        name: 'Cocktail_Ingredients',
-        component: Cocktail_Ingredients,
-        props: true,
+        path: '/ingredients/:id',
+        name: 'Ingredients',
+        component: Ingredients,
     },
 ];
 
