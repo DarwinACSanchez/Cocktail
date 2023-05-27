@@ -1,7 +1,7 @@
 <template>
   <div class="flex justify-between mt-8">
     <h3 class="font-serif text-2xl font-bold ml-8">Categories</h3>
-    <Link href="/cocktail_list" class="justify-end mr-8 font-serif text-base font-bold ml-8 block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">See All Categories</Link>
+    <router-link to="/cocktail_list" class="justify-end mr-8 font-serif text-base font-bold ml-8 block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">See All Categories</router-link>
   </div>
   <swiper
     :slidesPerView="1"
@@ -50,38 +50,35 @@
   // import required modules
   import { Autoplay, Pagination, Navigation } from 'swiper';
 
-  import { Link } from "@inertiajs/vue3"
-
   export default {
     components: {
-      Link,
       Swiper,
       SwiperSlide,
     },
     setup() {
       const imageData = [
         {
-          image: "/images/ordinary drink.jpg",
+          image: "/image/ordinary drink.jpg",
           title: "Ordinary Drink",
         },
         {
-          image: "/images/cocktail.jpg",
+          image: "/image/cocktail.jpg",
           title: "Cocktail",
         },
         {
-          image: "/images/shake.jpg",
+          image: "/image/shake.jpg",
           title: "Shake",
         },
         {
-          image: "/images/cocoa.jpg",
+          image: "/image/cocoa.jpg",
           title: "Cocoa",
         },
         {
-          image: "/images/shot.jpg",
+          image: "/image/shot.jpg",
           title: "Shot",
         },
         {
-          image: "/images/beer.jpg",
+          image: "/image/beer.jpg",
           title: "Beer",
         },
       ];

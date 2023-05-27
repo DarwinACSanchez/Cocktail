@@ -60,7 +60,7 @@
     </div>
     
     <!-- Carousel -->
-        <!-- <Carousel /> -->
+        <Carousel />
     <!-- End Carousel -->
 
     <Footer />
@@ -69,14 +69,13 @@
 
 <script>
 // import Navbar from '../Shared/Navbar.vue';
-// import { Link } from "@inertiajs/vue3";
-// import Carousel from '../Shared/Carousel.vue';
+import Carousel from '../Shared/Carousel.vue';
 import Footer from '../Shared/Footer.vue';
 
 export default {
     components: {
         // Navbar,
-        // Carousel,
+        Carousel,
         Footer,
         // Link,
     }
