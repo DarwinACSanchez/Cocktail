@@ -10,9 +10,9 @@
         <div class="w-full sm:w-1/2 p-4">
           <h2 class="font-serif text-xl font-bold">List of ingredients</h2>
           <div class="flex flex-wrap">
-            <div v-for="(ingredient, index) in ingredients" :key="index" class="w-full sm:w-1/3 p-2">
-              <img :src="`https://www.thecocktaildb.com/images/ingredients/${ingredient}.png`" alt="Descripción de la imagen" class="mx-auto block w-32 h-32">
-              <h3 class="text-center mt-2 font-bold">{{ bebida[`strMeasure${index + 1}`] + ' ' + ingredient }}</h3>
+            <div v-for="(medida, ingrediente) in ingredientes" :key="ingrediente" class="w-full sm:w-1/3 p-2">
+              <img :src="`https://www.thecocktaildb.com/images/ingredients/${ingrediente}.png`" alt="Descripción de la imagen" class="mx-auto block w-32 h-32">
+              <h3 class="text-center mt-2 font-bold">{{ medida + ' ' + ingrediente }}</h3>
             </div>
           </div>
         </div>
@@ -32,21 +32,19 @@
       </a>
     </div>
   
-    <!-- <Footer /> -->
+    <Footer />
   </template>
   
   <script>
   import axios from "axios";
-  // import { Link } from "@inertiajs/vue3";
   // import Navbar from '../Shared/Navbar.vue';
-  // import Footer from '../Shared/Footer.vue';
+  import Footer from '../Shared/Footer.vue';
   
   export default {
-    // components: {
+    components: {
     //     Navbar,
-    //     Footer,
-    //     Link,
-    // },
+        Footer,
+    },
     name: "Ingredients",
     data() {
     return {
@@ -68,12 +66,12 @@
   methods: {
     obtenerIngredientes() {
       // Extraer los ingredientes de la respuesta de la API
-      const ingredientes = [];
+      const ingredientes = {};
       for (let i = 1; i <= 15; i++) {
         const ingrediente = this.bebida[`strIngredient${i}`];
         const medida = this.bebida[`strMeasure${i}`];
         if (ingrediente && medida) {
-          ingredientes.push(`${ingrediente} - ${medida}`);
+          ingredientes[ingrediente] = medida;
         }
       }
       this.ingredientes = ingredientes;

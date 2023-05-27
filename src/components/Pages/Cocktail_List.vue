@@ -73,21 +73,19 @@
   </div>
   <!-- End Pagination -->
 
-  <!-- <Footer /> -->
+  <Footer />
 </template>
 
 <script>
-// import { Link } from "@inertiajs/vue3";
-// import Navbar from '../Shared/Navbar.vue';
-// import Footer from '../Shared/Footer.vue';
 import axios from 'axios';
+// import Navbar from '../Shared/Navbar.vue';
+import Footer from '../Shared/Footer.vue';
 
 export default {
-  // components: {
+  components: {
   //   Navbar,
-  //   Footer,
-  //   Link,
-  // },
+    Footer,
+  },
   data() {
     return {
       categorias: ['Ordinary Drink', 'Cocktail', 'Shake', 'Cocoa','Shot','Beer','Soft Drink','Homemade Liqueur'],

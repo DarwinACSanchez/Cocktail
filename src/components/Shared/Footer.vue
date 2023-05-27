@@ -2,7 +2,7 @@
     
 <footer class="bg-gray-900">
     <div class="mx-auto flex justify-center items-center">
-        <img src="/images/Logo.jpg" alt="Logo" class="w-36"/>
+        <img src="/image/Logo.jpg" alt="Logo" class="w-36"/>
     </div>
     <div class="mx-auto container justify-center items-center">
         <div class="container mx-auto flex justify-center items-center">
@@ -23,10 +23,8 @@
 </template>
 
 <script>
-import { Link } from "@inertiajs/vue3"
 export default {
     components: {
-        Link,
     }
 }
 </script>

@@ -55,7 +55,7 @@
                         See more...
                     </span>
                 </button>
-            </router-link>>
+            </router-link>
         </div>
     </div>
     
@@ -63,7 +63,7 @@
         <!-- <Carousel /> -->
     <!-- End Carousel -->
 
-    <!-- <Footer /> -->
+    <Footer />
 </template>
 
 
@@ -71,13 +71,13 @@
 // import Navbar from '../Shared/Navbar.vue';
 // import { Link } from "@inertiajs/vue3";
 // import Carousel from '../Shared/Carousel.vue';
-// import Footer from '../Shared/Footer.vue';
+import Footer from '../Shared/Footer.vue';
 
 export default {
     components: {
         // Navbar,
         // Carousel,
-        // Footer,
+        Footer,
         // Link,
     }
 }

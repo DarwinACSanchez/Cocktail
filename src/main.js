@@ -1,32 +1,13 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import './assets/style.css'
+import '@fortawesome/fontawesome-free/css/all.min.css'
 
 //*Importar el router
 import { createWebHistory, createRouter } from 'vue-router'
 import Home from './components/Pages/Home.vue'
 import Cocktail_List from './components/Pages/Cocktail_List.vue'
 import Ingredients from './components/Pages/Ingredients.vue'
-
-
-// import "../css/app.css"
-// import '@fortawesome/fontawesome-free/css/all.min.css'
-
-// import { createApp, h } from 'vue'
-// import { createInertiaApp } from '@inertiajs/vue3'
-
-// createInertiaApp({
-//     resolve: name => {
-//         const pages = import.meta.glob('./Pages/**/*.vue', { eager: true})
-//         return pages[`./Pages/${name}.vue`]
-//     },
-//     setup ({ el, App, props, plugin }) {
-//         createApp({ render: () => h(App, props) })
-//         .use(plugin)
-//         .mount(el)
-//     },
-// })
-
 
 //* Definir las Rutas
 const routes = [
