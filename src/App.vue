@@ -1,8 +1,6 @@
 <template>
    <div>
-      <a href="https://github.com/Pedro-UP" target="_blank">
-         <img src="/image/iconojpg.jpg" class="logo" alt="PC logo" />
-      </a>
+     
    </div>
 
    <div id="nav">
