@@ -15,9 +15,9 @@ La aplicación que permite a los usuarios explorar una amplia variedad de receta
 - API de TheCocktailDB para mostrar las bebidas.
 - Font Awesome, para los iconos.
 
-![Vista Home](/public/images/readme/home1.png)
-![Vista Home](/public/images/readme/home2.png)
-![Vista Home](/public/images/readme/home3.png)
-![Vista Lista de Cocteles](/public/images/readme/cocktailList1.png)
-![Vista Lista de Cocteles](/public/images/readme/cocktailList2.png)
-![Vista detalles del Coctel](/public/images/readme/cocktaildetails.png)
+![Vista Home](/public/image/readme/home1.png)
+![Vista Home](/public/image/readme/home2.png)
+![Vista Home](/public/image/readme/home3.png)
+![Vista Lista de Cocteles](/public/image/readme/cocktailList1.png)
+![Vista Lista de Cocteles](/public/image/readme/cocktailList2.png)
+![Vista detalles del Coctel](/public/image/readme/cocktaildetails.png)

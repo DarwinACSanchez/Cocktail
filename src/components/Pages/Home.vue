@@ -1,5 +1,5 @@
 <template>
-    <!-- <Navbar /> -->
+    <Navbar />
     
     <div class="justify-center items-center relative">
         <img class="w-full" src="/image/Img1.png" alt="">
@@ -68,16 +68,15 @@
 
 
 <script>
-// import Navbar from '../Shared/Navbar.vue';
+import Navbar from '../Shared/Navbar.vue';
 import Carousel from '../Shared/Carousel.vue';
 import Footer from '../Shared/Footer.vue';
 
 export default {
     components: {
-        // Navbar,
+        Navbar,
         Carousel,
         Footer,
-        // Link,
     }
 }
 </script>

@@ -1,5 +1,5 @@
 <template>
-    <!-- <Navbar /> -->
+    <Navbar />
     <div class="text-center mt-10" v-if="bebida">
       <h1 class="font-serif text-2xl font-bold mt-8">Cocktail Details</h1>
       <div class="flex flex-wrap">
@@ -37,12 +37,12 @@
   
   <script>
   import axios from "axios";
-  // import Navbar from '../Shared/Navbar.vue';
+  import Navbar from '../Shared/Navbar.vue';
   import Footer from '../Shared/Footer.vue';
   
   export default {
     components: {
-    //     Navbar,
+        Navbar,
         Footer,
     },
     name: "Ingredients",

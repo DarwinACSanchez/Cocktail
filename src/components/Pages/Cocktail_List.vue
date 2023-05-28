@@ -1,5 +1,5 @@
 <template>
-  <!-- <Navbar /> -->
+  <Navbar />
 
   <h1 class="text-center font-serif text-3xl font-bold mt-10 mx-1">Find your favorite cocktail</h1>
   <!-- Search -->
@@ -78,12 +78,12 @@
 
 <script>
 import axios from 'axios';
-// import Navbar from '../Shared/Navbar.vue';
+import Navbar from '../Shared/Navbar.vue';
 import Footer from '../Shared/Footer.vue';
 
 export default {
   components: {
-  //   Navbar,
+    Navbar,
     Footer,
   },
   data() {
